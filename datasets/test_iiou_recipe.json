@@ -1,0 +1,404 @@
+{
+  "test_iiou_raw/Fruits/Apple/iiou_001.jpg": {
+    "status": "crop_resize",
+    "crop_box": [
+      1,
+      295,
+      1365,
+      1367
+    ]
+  },
+  "test_iiou_raw/Fruits/Banana/iiou_001.png": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Fruits/Banana/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Fruits/Kiwi/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Fruits/Kiwi/iiou_002.jpeg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Fruits/Kiwi/iiou_003.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Fruits/Lemon/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Fruits/Lemon/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Fruits/Mango/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Fruits/Mango/iiou_002.jpeg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Fruits/Peach/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Fruits/Pear/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Fruits/Pear/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Fruits/Pineapple/iiou_001.jpg": {
+    "status": "crop_resize",
+    "crop_box": [
+      1,
+      148,
+      1403,
+      1779
+    ]
+  },
+  "test_iiou_raw/Fruits/Pineapple/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Herbs/Angelica/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Herbs/Angelica/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Herbs/Angelica/iiou_003.jpg": {
+    "status": "crop_resize",
+    "crop_box": [
+      3,
+      211,
+      1437,
+      1523
+    ]
+  },
+  "test_iiou_raw/Herbs/Chamomile/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Herbs/Chamomile/iiou_002.jpg": {
+    "status": "crop_resize",
+    "crop_box": [
+      0,
+      0,
+      391,
+      258
+    ]
+  },
+  "test_iiou_raw/Herbs/Chives/iiou_001.jpeg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Herbs/Dill/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Herbs/Garlic/iiou_001.jpg": {
+    "status": "crop_resize",
+    "crop_box": [
+      1,
+      6,
+      174,
+      175
+    ]
+  },
+  "test_iiou_raw/Herbs/Mint/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Herbs/Mint/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Herbs/Mugwort/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Herbs/Mugwort/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Herbs/Mugwort/iiou_003.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Herbs/Mugwort/iiou_004.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Herbs/Oregano/iiou_001.png": {
+    "status": "crop_resize",
+    "crop_box": [
+      0,
+      146,
+      1024,
+      1024
+    ]
+  },
+  "test_iiou_raw/Herbs/Oregano/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Herbs/Oregano/iiou_003.jpg": {
+    "status": "crop_resize",
+    "crop_box": [
+      24,
+      0,
+      564,
+      564
+    ]
+  },
+  "test_iiou_raw/Herbs/Oregano/iiou_004.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Herbs/Turnip/iiou_001.webp": {
+    "status": "crop_resize",
+    "crop_box": [
+      0,
+      -1,
+      391,
+      258
+    ]
+  },
+  "test_iiou_raw/Herbs/Turnip/iiou_002.jpg": {
+    "status": "crop_resize",
+    "crop_box": [
+      1,
+      101,
+      800,
+      800
+    ]
+  },
+  "test_iiou_raw/Herbs/Turnip/iiou_003.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Herbs/Turnip/iiou_004.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Nuts/Almond/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Nuts/Almond/iiou_002.jpg": {
+    "status": "crop_resize",
+    "crop_box": [
+      508,
+      158,
+      748,
+      735
+    ]
+  },
+  "test_iiou_raw/Nuts/Brazil_Nut/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Nuts/Brazil_Nut/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Nuts/Brazil_Nut/iiou_003.jpg": {
+    "status": "crop_resize",
+    "crop_box": [
+      2,
+      358,
+      1502,
+      1782
+    ]
+  },
+  "test_iiou_raw/Nuts/Brazil_Nut/iiou_004.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Nuts/Cashew/iiou_001.jpg": {
+    "status": "crop_resize",
+    "crop_box": [
+      53,
+      8,
+      389,
+      389
+    ]
+  },
+  "test_iiou_raw/Nuts/Chestnuts/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Nuts/Chestnuts/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Nuts/Chestnuts/iiou_003.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Nuts/Chestnuts/iiou_004.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Nuts/Hazelnut/iiou_001.jpeg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Nuts/Hazelnut/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Nuts/Hazelnut/iiou_003.jpg": {
+    "status": "crop_resize",
+    "crop_box": [
+      0,
+      276,
+      1001,
+      1220
+    ]
+  },
+  "test_iiou_raw/Nuts/Hazelnut/iiou_004.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Nuts/Pecans/iiou_001.jpg": {
+    "status": "crop_resize",
+    "crop_box": [
+      0,
+      61,
+      534,
+      655
+    ]
+  },
+  "test_iiou_raw/Nuts/Pecans/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Nuts/Pecans/iiou_003.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Nuts/Pili_Nut/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Nuts/Pili_Nut/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Nuts/Pili_Nut/iiou_003.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Nuts/Pistachios/iiou_001.jpg": {
+    "status": "crop_resize",
+    "crop_box": [
+      1,
+      564,
+      1360,
+      1360
+    ]
+  },
+  "test_iiou_raw/Nuts/Pistachios/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Nuts/Pistachios/iiou_003.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Nuts/Walnuts/iiou_001.png": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Allspice/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Allspice/iiou_002.webp": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Allspice/iiou_003.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Allspice/iiou_004.jpeg": {
+    "status": "crop_resize",
+    "crop_box": [
+      1,
+      1,
+      1348,
+      1140
+    ]
+  },
+  "test_iiou_raw/Spices/Chervil/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Chervil/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Chervil/iiou_003.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Chervil/iiou_004.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Cinnamon/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Cinnamon/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Cloves/iiou_001.jpeg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Cloves/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Cloves/iiou_003.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Cumin/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Ginger/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Mustard/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Mustard/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Nutmeg/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Saffron/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Saffron/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Star_Anise/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Spices/Star_Anise/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Vegetables/Asparagus/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Vegetables/Avocado/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Vegetables/Avocado/iiou_002.webp": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Vegetables/Broccoli/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Vegetables/Brussel_Sprouts/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Vegetables/Brussel_Sprouts/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Vegetables/Cabbage/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Vegetables/Cabbage/iiou_002.jpg": {
+    "status": "crop_resize",
+    "crop_box": [
+      113,
+      0,
+      497,
+      422
+    ]
+  },
+  "test_iiou_raw/Vegetables/Cabbage/iiou_003.jpeg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Vegetables/Cauliflower/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Vegetables/Potato/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Vegetables/Radish/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Vegetables/Radish/iiou_002.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Vegetables/Radish/iiou_003.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Vegetables/Sweet_Potato/iiou_001.jpg": {
+    "status": "resize_only"
+  },
+  "test_iiou_raw/Vegetables/Sweet_Potato/iiou_002.jpg": {
+    "status": "resize_only"
+  }
+}

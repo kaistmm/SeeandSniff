@@ -1,0 +1,702 @@
+[
+  {
+    "path": "test_iiou/Fruits/Apple/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Fruits/Apple/iiou_001.png",
+    "mask_second": "mask_iiou_second/Fruits/Apple/iiou_001.png",
+    "ingredient1": "apple",
+    "ingredient2": "chamomile"
+  },
+  {
+    "path": "test_iiou/Fruits/Banana/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Fruits/Banana/iiou_001.png",
+    "mask_second": "mask_iiou_second/Fruits/Banana/iiou_001.png",
+    "ingredient1": "banana",
+    "ingredient2": "strawberry"
+  },
+  {
+    "path": "test_iiou/Fruits/Banana/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Fruits/Banana/iiou_002.png",
+    "mask_second": "mask_iiou_second/Fruits/Banana/iiou_002.png",
+    "ingredient1": "banana",
+    "ingredient2": "cabbage"
+  },
+  {
+    "path": "test_iiou/Fruits/Kiwi/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Fruits/Kiwi/iiou_001.png",
+    "mask_second": "mask_iiou_second/Fruits/Kiwi/iiou_001.png",
+    "ingredient1": "kiwi",
+    "ingredient2": "avocado"
+  },
+  {
+    "path": "test_iiou/Fruits/Kiwi/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Fruits/Kiwi/iiou_002.png",
+    "mask_second": "mask_iiou_second/Fruits/Kiwi/iiou_002.png",
+    "ingredient1": "kiwi",
+    "ingredient2": "strawberry"
+  },
+  {
+    "path": "test_iiou/Fruits/Kiwi/iiou_003.jpg",
+    "mask_first": "mask_iiou_first/Fruits/Kiwi/iiou_003.png",
+    "mask_second": "mask_iiou_second/Fruits/Kiwi/iiou_003.png",
+    "ingredient1": "kiwi",
+    "ingredient2": "mandarin_orange"
+  },
+  {
+    "path": "test_iiou/Fruits/Lemon/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Fruits/Lemon/iiou_001.png",
+    "mask_second": "mask_iiou_second/Fruits/Lemon/iiou_001.png",
+    "ingredient1": "lemon",
+    "ingredient2": "cashew"
+  },
+  {
+    "path": "test_iiou/Fruits/Lemon/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Fruits/Lemon/iiou_002.png",
+    "mask_second": "mask_iiou_second/Fruits/Lemon/iiou_002.png",
+    "ingredient1": "lemon",
+    "ingredient2": "banana"
+  },
+  {
+    "path": "test_iiou/Fruits/Mango/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Fruits/Mango/iiou_001.png",
+    "mask_second": "mask_iiou_second/Fruits/Mango/iiou_001.png",
+    "ingredient1": "mango",
+    "ingredient2": "peach"
+  },
+  {
+    "path": "test_iiou/Fruits/Mango/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Fruits/Mango/iiou_002.png",
+    "mask_second": "mask_iiou_second/Fruits/Mango/iiou_002.png",
+    "ingredient1": "mango",
+    "ingredient2": "pineapple"
+  },
+  {
+    "path": "test_iiou/Fruits/Peach/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Fruits/Peach/iiou_001.png",
+    "mask_second": "mask_iiou_second/Fruits/Peach/iiou_001.png",
+    "ingredient1": "peach",
+    "ingredient2": "almond"
+  },
+  {
+    "path": "test_iiou/Fruits/Pear/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Fruits/Pear/iiou_001.png",
+    "mask_second": "mask_iiou_second/Fruits/Pear/iiou_001.png",
+    "ingredient1": "pear",
+    "ingredient2": "apple"
+  },
+  {
+    "path": "test_iiou/Fruits/Pear/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Fruits/Pear/iiou_002.png",
+    "mask_second": "mask_iiou_second/Fruits/Pear/iiou_002.png",
+    "ingredient1": "pear",
+    "ingredient2": "cinnamon"
+  },
+  {
+    "path": "test_iiou/Fruits/Pineapple/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Fruits/Pineapple/iiou_001.png",
+    "mask_second": "mask_iiou_second/Fruits/Pineapple/iiou_001.png",
+    "ingredient1": "pineapple",
+    "ingredient2": "avocado"
+  },
+  {
+    "path": "test_iiou/Fruits/Pineapple/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Fruits/Pineapple/iiou_002.png",
+    "mask_second": "mask_iiou_second/Fruits/Pineapple/iiou_002.png",
+    "ingredient1": "pineapple",
+    "ingredient2": "ginger"
+  },
+  {
+    "path": "test_iiou/Herbs/Angelica/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Angelica/iiou_001.png",
+    "mask_second": "mask_iiou_second/Herbs/Angelica/iiou_001.png",
+    "ingredient1": "angelica",
+    "ingredient2": "saffron"
+  },
+  {
+    "path": "test_iiou/Herbs/Angelica/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Angelica/iiou_002.png",
+    "mask_second": "mask_iiou_second/Herbs/Angelica/iiou_002.png",
+    "ingredient1": "angelica",
+    "ingredient2": "coriander"
+  },
+  {
+    "path": "test_iiou/Herbs/Angelica/iiou_003.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Angelica/iiou_003.png",
+    "mask_second": "mask_iiou_second/Herbs/Angelica/iiou_003.png",
+    "ingredient1": "angelica",
+    "ingredient2": "ginger"
+  },
+  {
+    "path": "test_iiou/Herbs/Chamomile/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Chamomile/iiou_001.png",
+    "mask_second": "mask_iiou_second/Herbs/Chamomile/iiou_001.png",
+    "ingredient1": "chamomile",
+    "ingredient2": "mint"
+  },
+  {
+    "path": "test_iiou/Herbs/Chamomile/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Chamomile/iiou_002.png",
+    "mask_second": "mask_iiou_second/Herbs/Chamomile/iiou_002.png",
+    "ingredient1": "chamomile",
+    "ingredient2": "nutmeg"
+  },
+  {
+    "path": "test_iiou/Herbs/Chives/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Chives/iiou_001.png",
+    "mask_second": "mask_iiou_second/Herbs/Chives/iiou_001.png",
+    "ingredient1": "chives",
+    "ingredient2": "garlic"
+  },
+  {
+    "path": "test_iiou/Herbs/Dill/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Dill/iiou_001.png",
+    "mask_second": "mask_iiou_second/Herbs/Dill/iiou_001.png",
+    "ingredient1": "dill",
+    "ingredient2": "lemon"
+  },
+  {
+    "path": "test_iiou/Herbs/Garlic/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Garlic/iiou_001.png",
+    "mask_second": "mask_iiou_second/Herbs/Garlic/iiou_001.png",
+    "ingredient1": "garlic",
+    "ingredient2": "nutmeg"
+  },
+  {
+    "path": "test_iiou/Herbs/Mint/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Mint/iiou_001.png",
+    "mask_second": "mask_iiou_second/Herbs/Mint/iiou_001.png",
+    "ingredient1": "mint",
+    "ingredient2": "mandarin_orange"
+  },
+  {
+    "path": "test_iiou/Herbs/Mint/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Mint/iiou_002.png",
+    "mask_second": "mask_iiou_second/Herbs/Mint/iiou_002.png",
+    "ingredient1": "mint",
+    "ingredient2": "strawberry"
+  },
+  {
+    "path": "test_iiou/Herbs/Mugwort/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Mugwort/iiou_001.png",
+    "mask_second": "mask_iiou_second/Herbs/Mugwort/iiou_001.png",
+    "ingredient1": "mugwort",
+    "ingredient2": "lemon"
+  },
+  {
+    "path": "test_iiou/Herbs/Mugwort/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Mugwort/iiou_002.png",
+    "mask_second": "mask_iiou_second/Herbs/Mugwort/iiou_002.png",
+    "ingredient1": "mugwort",
+    "ingredient2": "mandarin_orange"
+  },
+  {
+    "path": "test_iiou/Herbs/Mugwort/iiou_003.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Mugwort/iiou_003.png",
+    "mask_second": "mask_iiou_second/Herbs/Mugwort/iiou_003.png",
+    "ingredient1": "mugwort",
+    "ingredient2": "pineapple"
+  },
+  {
+    "path": "test_iiou/Herbs/Mugwort/iiou_004.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Mugwort/iiou_004.png",
+    "mask_second": "mask_iiou_second/Herbs/Mugwort/iiou_004.png",
+    "ingredient1": "mugwort",
+    "ingredient2": "tomato"
+  },
+  {
+    "path": "test_iiou/Herbs/Oregano/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Oregano/iiou_001.png",
+    "mask_second": "mask_iiou_second/Herbs/Oregano/iiou_001.png",
+    "ingredient1": "oregano",
+    "ingredient2": "asparagus"
+  },
+  {
+    "path": "test_iiou/Herbs/Oregano/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Oregano/iiou_002.png",
+    "mask_second": "mask_iiou_second/Herbs/Oregano/iiou_002.png",
+    "ingredient1": "oregano",
+    "ingredient2": "cashew"
+  },
+  {
+    "path": "test_iiou/Herbs/Oregano/iiou_003.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Oregano/iiou_003.png",
+    "mask_second": "mask_iiou_second/Herbs/Oregano/iiou_003.png",
+    "ingredient1": "oregano",
+    "ingredient2": "chives"
+  },
+  {
+    "path": "test_iiou/Herbs/Oregano/iiou_004.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Oregano/iiou_004.png",
+    "mask_second": "mask_iiou_second/Herbs/Oregano/iiou_004.png",
+    "ingredient1": "oregano",
+    "ingredient2": "tomato"
+  },
+  {
+    "path": "test_iiou/Herbs/Turnip/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Turnip/iiou_001.png",
+    "mask_second": "mask_iiou_second/Herbs/Turnip/iiou_001.png",
+    "ingredient1": "turnip",
+    "ingredient2": "broccoli"
+  },
+  {
+    "path": "test_iiou/Herbs/Turnip/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Turnip/iiou_002.png",
+    "mask_second": "mask_iiou_second/Herbs/Turnip/iiou_002.png",
+    "ingredient1": "turnip",
+    "ingredient2": "pistachios"
+  },
+  {
+    "path": "test_iiou/Herbs/Turnip/iiou_003.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Turnip/iiou_003.png",
+    "mask_second": "mask_iiou_second/Herbs/Turnip/iiou_003.png",
+    "ingredient1": "turnip",
+    "ingredient2": "radish"
+  },
+  {
+    "path": "test_iiou/Herbs/Turnip/iiou_004.jpg",
+    "mask_first": "mask_iiou_first/Herbs/Turnip/iiou_004.png",
+    "mask_second": "mask_iiou_second/Herbs/Turnip/iiou_004.png",
+    "ingredient1": "turnip",
+    "ingredient2": "walnuts"
+  },
+  {
+    "path": "test_iiou/Nuts/Almond/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Almond/iiou_001.png",
+    "mask_second": "mask_iiou_second/Nuts/Almond/iiou_001.png",
+    "ingredient1": "almond",
+    "ingredient2": "peanuts"
+  },
+  {
+    "path": "test_iiou/Nuts/Almond/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Almond/iiou_002.png",
+    "mask_second": "mask_iiou_second/Nuts/Almond/iiou_002.png",
+    "ingredient1": "almond",
+    "ingredient2": "cumin"
+  },
+  {
+    "path": "test_iiou/Nuts/Brazil_Nut/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Brazil_Nut/iiou_001.png",
+    "mask_second": "mask_iiou_second/Nuts/Brazil_Nut/iiou_001.png",
+    "ingredient1": "brazil_nut",
+    "ingredient2": "cashew"
+  },
+  {
+    "path": "test_iiou/Nuts/Brazil_Nut/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Brazil_Nut/iiou_002.png",
+    "mask_second": "mask_iiou_second/Nuts/Brazil_Nut/iiou_002.png",
+    "ingredient1": "brazil_nut",
+    "ingredient2": "almond"
+  },
+  {
+    "path": "test_iiou/Nuts/Brazil_Nut/iiou_003.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Brazil_Nut/iiou_003.png",
+    "mask_second": "mask_iiou_second/Nuts/Brazil_Nut/iiou_003.png",
+    "ingredient1": "brazil_nut",
+    "ingredient2": "cinnamon"
+  },
+  {
+    "path": "test_iiou/Nuts/Brazil_Nut/iiou_004.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Brazil_Nut/iiou_004.png",
+    "mask_second": "mask_iiou_second/Nuts/Brazil_Nut/iiou_004.png",
+    "ingredient1": "brazil_nut",
+    "ingredient2": "mango"
+  },
+  {
+    "path": "test_iiou/Nuts/Cashew/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Cashew/iiou_001.png",
+    "mask_second": "mask_iiou_second/Nuts/Cashew/iiou_001.png",
+    "ingredient1": "cashew",
+    "ingredient2": "mint"
+  },
+  {
+    "path": "test_iiou/Nuts/Chestnuts/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Chestnuts/iiou_001.png",
+    "mask_second": "mask_iiou_second/Nuts/Chestnuts/iiou_001.png",
+    "ingredient1": "chestnuts",
+    "ingredient2": "apple"
+  },
+  {
+    "path": "test_iiou/Nuts/Chestnuts/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Chestnuts/iiou_002.png",
+    "mask_second": "mask_iiou_second/Nuts/Chestnuts/iiou_002.png",
+    "ingredient1": "chestnuts",
+    "ingredient2": "garlic"
+  },
+  {
+    "path": "test_iiou/Nuts/Chestnuts/iiou_003.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Chestnuts/iiou_003.png",
+    "mask_second": "mask_iiou_second/Nuts/Chestnuts/iiou_003.png",
+    "ingredient1": "chestnuts",
+    "ingredient2": "brussel_sprouts"
+  },
+  {
+    "path": "test_iiou/Nuts/Chestnuts/iiou_004.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Chestnuts/iiou_004.png",
+    "mask_second": "mask_iiou_second/Nuts/Chestnuts/iiou_004.png",
+    "ingredient1": "chestnuts",
+    "ingredient2": "peach"
+  },
+  {
+    "path": "test_iiou/Nuts/Hazelnut/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Hazelnut/iiou_001.png",
+    "mask_second": "mask_iiou_second/Nuts/Hazelnut/iiou_001.png",
+    "ingredient1": "hazelnut",
+    "ingredient2": "pear"
+  },
+  {
+    "path": "test_iiou/Nuts/Hazelnut/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Hazelnut/iiou_002.png",
+    "mask_second": "mask_iiou_second/Nuts/Hazelnut/iiou_002.png",
+    "ingredient1": "hazelnut",
+    "ingredient2": "brussel_sprouts"
+  },
+  {
+    "path": "test_iiou/Nuts/Hazelnut/iiou_003.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Hazelnut/iiou_003.png",
+    "mask_second": "mask_iiou_second/Nuts/Hazelnut/iiou_003.png",
+    "ingredient1": "hazelnut",
+    "ingredient2": "dill"
+  },
+  {
+    "path": "test_iiou/Nuts/Hazelnut/iiou_004.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Hazelnut/iiou_004.png",
+    "mask_second": "mask_iiou_second/Nuts/Hazelnut/iiou_004.png",
+    "ingredient1": "hazelnut",
+    "ingredient2": "sweet_potato"
+  },
+  {
+    "path": "test_iiou/Nuts/Pecans/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Pecans/iiou_001.png",
+    "mask_second": "mask_iiou_second/Nuts/Pecans/iiou_001.png",
+    "ingredient1": "pecans",
+    "ingredient2": "broccoli"
+  },
+  {
+    "path": "test_iiou/Nuts/Pecans/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Pecans/iiou_002.png",
+    "mask_second": "mask_iiou_second/Nuts/Pecans/iiou_002.png",
+    "ingredient1": "pecans",
+    "ingredient2": "coriander"
+  },
+  {
+    "path": "test_iiou/Nuts/Pecans/iiou_003.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Pecans/iiou_003.png",
+    "mask_second": "mask_iiou_second/Nuts/Pecans/iiou_003.png",
+    "ingredient1": "pecans",
+    "ingredient2": "walnuts"
+  },
+  {
+    "path": "test_iiou/Nuts/Pili_Nut/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Pili_Nut/iiou_001.png",
+    "mask_second": "mask_iiou_second/Nuts/Pili_Nut/iiou_001.png",
+    "ingredient1": "pili_nut",
+    "ingredient2": "mango"
+  },
+  {
+    "path": "test_iiou/Nuts/Pili_Nut/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Pili_Nut/iiou_002.png",
+    "mask_second": "mask_iiou_second/Nuts/Pili_Nut/iiou_002.png",
+    "ingredient1": "pili_nut",
+    "ingredient2": "strawberry"
+  },
+  {
+    "path": "test_iiou/Nuts/Pili_Nut/iiou_003.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Pili_Nut/iiou_003.png",
+    "mask_second": "mask_iiou_second/Nuts/Pili_Nut/iiou_003.png",
+    "ingredient1": "pili_nut",
+    "ingredient2": "banana"
+  },
+  {
+    "path": "test_iiou/Nuts/Pistachios/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Pistachios/iiou_001.png",
+    "mask_second": "mask_iiou_second/Nuts/Pistachios/iiou_001.png",
+    "ingredient1": "pistachios",
+    "ingredient2": "cauliflower"
+  },
+  {
+    "path": "test_iiou/Nuts/Pistachios/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Pistachios/iiou_002.png",
+    "mask_second": "mask_iiou_second/Nuts/Pistachios/iiou_002.png",
+    "ingredient1": "pistachios",
+    "ingredient2": "peach"
+  },
+  {
+    "path": "test_iiou/Nuts/Pistachios/iiou_003.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Pistachios/iiou_003.png",
+    "mask_second": "mask_iiou_second/Nuts/Pistachios/iiou_003.png",
+    "ingredient1": "pistachios",
+    "ingredient2": "mandarin_orange"
+  },
+  {
+    "path": "test_iiou/Nuts/Walnuts/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Nuts/Walnuts/iiou_001.png",
+    "mask_second": "mask_iiou_second/Nuts/Walnuts/iiou_001.png",
+    "ingredient1": "walnuts",
+    "ingredient2": "kiwi"
+  },
+  {
+    "path": "test_iiou/Spices/Allspice/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Spices/Allspice/iiou_001.png",
+    "mask_second": "mask_iiou_second/Spices/Allspice/iiou_001.png",
+    "ingredient1": "allspice",
+    "ingredient2": "coriander"
+  },
+  {
+    "path": "test_iiou/Spices/Allspice/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Spices/Allspice/iiou_002.png",
+    "mask_second": "mask_iiou_second/Spices/Allspice/iiou_002.png",
+    "ingredient1": "allspice",
+    "ingredient2": "cloves"
+  },
+  {
+    "path": "test_iiou/Spices/Allspice/iiou_003.jpg",
+    "mask_first": "mask_iiou_first/Spices/Allspice/iiou_003.png",
+    "mask_second": "mask_iiou_second/Spices/Allspice/iiou_003.png",
+    "ingredient1": "allspice",
+    "ingredient2": "mustard"
+  },
+  {
+    "path": "test_iiou/Spices/Allspice/iiou_004.jpg",
+    "mask_first": "mask_iiou_first/Spices/Allspice/iiou_004.png",
+    "mask_second": "mask_iiou_second/Spices/Allspice/iiou_004.png",
+    "ingredient1": "allspice",
+    "ingredient2": "pecans"
+  },
+  {
+    "path": "test_iiou/Spices/Chervil/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Spices/Chervil/iiou_001.png",
+    "mask_second": "mask_iiou_second/Spices/Chervil/iiou_001.png",
+    "ingredient1": "chervil",
+    "ingredient2": "asparagus"
+  },
+  {
+    "path": "test_iiou/Spices/Chervil/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Spices/Chervil/iiou_002.png",
+    "mask_second": "mask_iiou_second/Spices/Chervil/iiou_002.png",
+    "ingredient1": "chervil",
+    "ingredient2": "potato"
+  },
+  {
+    "path": "test_iiou/Spices/Chervil/iiou_003.jpg",
+    "mask_first": "mask_iiou_first/Spices/Chervil/iiou_003.png",
+    "mask_second": "mask_iiou_second/Spices/Chervil/iiou_003.png",
+    "ingredient1": "chervil",
+    "ingredient2": "asparagus"
+  },
+  {
+    "path": "test_iiou/Spices/Chervil/iiou_004.jpg",
+    "mask_first": "mask_iiou_first/Spices/Chervil/iiou_004.png",
+    "mask_second": "mask_iiou_second/Spices/Chervil/iiou_004.png",
+    "ingredient1": "chervil",
+    "ingredient2": "walnuts"
+  },
+  {
+    "path": "test_iiou/Spices/Cinnamon/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Spices/Cinnamon/iiou_001.png",
+    "mask_second": "mask_iiou_second/Spices/Cinnamon/iiou_001.png",
+    "ingredient1": "cinnamon",
+    "ingredient2": "ginger"
+  },
+  {
+    "path": "test_iiou/Spices/Cinnamon/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Spices/Cinnamon/iiou_002.png",
+    "mask_second": "mask_iiou_second/Spices/Cinnamon/iiou_002.png",
+    "ingredient1": "cinnamon",
+    "ingredient2": "chamomile"
+  },
+  {
+    "path": "test_iiou/Spices/Cloves/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Spices/Cloves/iiou_001.png",
+    "mask_second": "mask_iiou_second/Spices/Cloves/iiou_001.png",
+    "ingredient1": "cloves",
+    "ingredient2": "star_anise"
+  },
+  {
+    "path": "test_iiou/Spices/Cloves/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Spices/Cloves/iiou_002.png",
+    "mask_second": "mask_iiou_second/Spices/Cloves/iiou_002.png",
+    "ingredient1": "cloves",
+    "ingredient2": "cumin"
+  },
+  {
+    "path": "test_iiou/Spices/Cloves/iiou_003.jpg",
+    "mask_first": "mask_iiou_first/Spices/Cloves/iiou_003.png",
+    "mask_second": "mask_iiou_second/Spices/Cloves/iiou_003.png",
+    "ingredient1": "cloves",
+    "ingredient2": "saffron"
+  },
+  {
+    "path": "test_iiou/Spices/Cumin/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Spices/Cumin/iiou_001.png",
+    "mask_second": "mask_iiou_second/Spices/Cumin/iiou_001.png",
+    "ingredient1": "cumin",
+    "ingredient2": "nutmeg"
+  },
+  {
+    "path": "test_iiou/Spices/Ginger/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Spices/Ginger/iiou_001.png",
+    "mask_second": "mask_iiou_second/Spices/Ginger/iiou_001.png",
+    "ingredient1": "ginger",
+    "ingredient2": "cabbage"
+  },
+  {
+    "path": "test_iiou/Spices/Mustard/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Spices/Mustard/iiou_001.png",
+    "mask_second": "mask_iiou_second/Spices/Mustard/iiou_001.png",
+    "ingredient1": "mustard",
+    "ingredient2": "cumin"
+  },
+  {
+    "path": "test_iiou/Spices/Mustard/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Spices/Mustard/iiou_002.png",
+    "mask_second": "mask_iiou_second/Spices/Mustard/iiou_002.png",
+    "ingredient1": "mustard",
+    "ingredient2": "dill"
+  },
+  {
+    "path": "test_iiou/Spices/Nutmeg/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Spices/Nutmeg/iiou_001.png",
+    "mask_second": "mask_iiou_second/Spices/Nutmeg/iiou_001.png",
+    "ingredient1": "nutmeg",
+    "ingredient2": "star_anise"
+  },
+  {
+    "path": "test_iiou/Spices/Saffron/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Spices/Saffron/iiou_001.png",
+    "mask_second": "mask_iiou_second/Spices/Saffron/iiou_001.png",
+    "ingredient1": "saffron",
+    "ingredient2": "coriander"
+  },
+  {
+    "path": "test_iiou/Spices/Saffron/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Spices/Saffron/iiou_002.png",
+    "mask_second": "mask_iiou_second/Spices/Saffron/iiou_002.png",
+    "ingredient1": "saffron",
+    "ingredient2": "garlic"
+  },
+  {
+    "path": "test_iiou/Spices/Star_Anise/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Spices/Star_Anise/iiou_001.png",
+    "mask_second": "mask_iiou_second/Spices/Star_Anise/iiou_001.png",
+    "ingredient1": "star_anise",
+    "ingredient2": "pear"
+  },
+  {
+    "path": "test_iiou/Spices/Star_Anise/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Spices/Star_Anise/iiou_002.png",
+    "mask_second": "mask_iiou_second/Spices/Star_Anise/iiou_002.png",
+    "ingredient1": "star_anise",
+    "ingredient2": "sweet_potato"
+  },
+  {
+    "path": "test_iiou/Vegetables/Asparagus/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Vegetables/Asparagus/iiou_001.png",
+    "mask_second": "mask_iiou_second/Vegetables/Asparagus/iiou_001.png",
+    "ingredient1": "asparagus",
+    "ingredient2": "tomato"
+  },
+  {
+    "path": "test_iiou/Vegetables/Avocado/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Vegetables/Avocado/iiou_001.png",
+    "mask_second": "mask_iiou_second/Vegetables/Avocado/iiou_001.png",
+    "ingredient1": "avocado",
+    "ingredient2": "apple"
+  },
+  {
+    "path": "test_iiou/Vegetables/Avocado/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Vegetables/Avocado/iiou_002.png",
+    "mask_second": "mask_iiou_second/Vegetables/Avocado/iiou_002.png",
+    "ingredient1": "avocado",
+    "ingredient2": "broccoli"
+  },
+  {
+    "path": "test_iiou/Vegetables/Broccoli/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Vegetables/Broccoli/iiou_001.png",
+    "mask_second": "mask_iiou_second/Vegetables/Broccoli/iiou_001.png",
+    "ingredient1": "broccoli",
+    "ingredient2": "cauliflower"
+  },
+  {
+    "path": "test_iiou/Vegetables/Brussel_Sprouts/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Vegetables/Brussel_Sprouts/iiou_001.png",
+    "mask_second": "mask_iiou_second/Vegetables/Brussel_Sprouts/iiou_001.png",
+    "ingredient1": "brussel_sprouts",
+    "ingredient2": "chives"
+  },
+  {
+    "path": "test_iiou/Vegetables/Brussel_Sprouts/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Vegetables/Brussel_Sprouts/iiou_002.png",
+    "mask_second": "mask_iiou_second/Vegetables/Brussel_Sprouts/iiou_002.png",
+    "ingredient1": "brussel_sprouts",
+    "ingredient2": "tomato"
+  },
+  {
+    "path": "test_iiou/Vegetables/Cabbage/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Vegetables/Cabbage/iiou_001.png",
+    "mask_second": "mask_iiou_second/Vegetables/Cabbage/iiou_001.png",
+    "ingredient1": "cabbage",
+    "ingredient2": "mustard"
+  },
+  {
+    "path": "test_iiou/Vegetables/Cabbage/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Vegetables/Cabbage/iiou_002.png",
+    "mask_second": "mask_iiou_second/Vegetables/Cabbage/iiou_002.png",
+    "ingredient1": "cabbage",
+    "ingredient2": "peanuts"
+  },
+  {
+    "path": "test_iiou/Vegetables/Cabbage/iiou_003.jpg",
+    "mask_first": "mask_iiou_first/Vegetables/Cabbage/iiou_003.png",
+    "mask_second": "mask_iiou_second/Vegetables/Cabbage/iiou_003.png",
+    "ingredient1": "cabbage",
+    "ingredient2": "tomato"
+  },
+  {
+    "path": "test_iiou/Vegetables/Cauliflower/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Vegetables/Cauliflower/iiou_001.png",
+    "mask_second": "mask_iiou_second/Vegetables/Cauliflower/iiou_001.png",
+    "ingredient1": "cauliflower",
+    "ingredient2": "potato"
+  },
+  {
+    "path": "test_iiou/Vegetables/Potato/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Vegetables/Potato/iiou_001.png",
+    "mask_second": "mask_iiou_second/Vegetables/Potato/iiou_001.png",
+    "ingredient1": "potato",
+    "ingredient2": "dill"
+  },
+  {
+    "path": "test_iiou/Vegetables/Radish/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Vegetables/Radish/iiou_001.png",
+    "mask_second": "mask_iiou_second/Vegetables/Radish/iiou_001.png",
+    "ingredient1": "radish",
+    "ingredient2": "chives"
+  },
+  {
+    "path": "test_iiou/Vegetables/Radish/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Vegetables/Radish/iiou_002.png",
+    "mask_second": "mask_iiou_second/Vegetables/Radish/iiou_002.png",
+    "ingredient1": "radish",
+    "ingredient2": "peanuts"
+  },
+  {
+    "path": "test_iiou/Vegetables/Radish/iiou_003.jpg",
+    "mask_first": "mask_iiou_first/Vegetables/Radish/iiou_003.png",
+    "mask_second": "mask_iiou_second/Vegetables/Radish/iiou_003.png",
+    "ingredient1": "radish",
+    "ingredient2": "cauliflower"
+  },
+  {
+    "path": "test_iiou/Vegetables/Sweet_Potato/iiou_001.jpg",
+    "mask_first": "mask_iiou_first/Vegetables/Sweet_Potato/iiou_001.png",
+    "mask_second": "mask_iiou_second/Vegetables/Sweet_Potato/iiou_001.png",
+    "ingredient1": "sweet_potato",
+    "ingredient2": "peanuts"
+  },
+  {
+    "path": "test_iiou/Vegetables/Sweet_Potato/iiou_002.jpg",
+    "mask_first": "mask_iiou_first/Vegetables/Sweet_Potato/iiou_002.png",
+    "mask_second": "mask_iiou_second/Vegetables/Sweet_Potato/iiou_002.png",
+    "ingredient1": "sweet_potato",
+    "ingredient2": "potato"
+  }
+]

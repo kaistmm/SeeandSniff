@@ -1,0 +1,9 @@
+torchmetrics>=1.8
+open_clip_torch>=2.24
+numpy>=1.26
+pandas>=2.0
+Pillow>=10.0
+scikit-learn>=1.3
+PyYAML>=6.0
+rich>=13.0
+wandb>=0.19

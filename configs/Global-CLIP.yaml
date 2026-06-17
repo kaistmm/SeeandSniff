@@ -1,0 +1,86 @@
+# Base configuration for Visual-Odor pretraining
+# Vision: CLIP ViT-L/14
+# Mode: global (using CLS token)
+# Aligner: none
+
+# Experiment info
+experiment_name: Global-CLIP
+output_dir: outputs/Global-CLIP
+log_dir: outputs/logs/Global-CLIP
+
+# ========== Data Paths ==========
+vision_train_json: metadata/train_metadata.json
+vision_test_json: metadata/test_metadata.json
+vision_train_dir: datasets/train
+vision_test_dir: datasets/test
+smell_train_dir: datasets/SmellNet/base_data/training
+smell_test_dir: datasets/SmellNet/base_data/testing
+label_json: metadata/ingredient_labels.json
+
+# ========== Data Preprocessing ==========
+diff_periods: 25
+window_size: 50
+stride: 25
+removed_columns:
+  - Benzene
+  - Temperature
+  - Pressure
+  - Humidity
+  - Gas_Resistance
+  - Altitude
+max_seq_len: 1000
+
+# ========== Dataset ==========
+pairing_mode: cycled_shuffle
+batch_size: 64
+num_workers: 8
+pin_mem: true
+
+# ========== Model Architecture ==========
+vision_encoder: clip_ViT-L-14
+vision_forward_option: cls_token  # cls_token or spatial_tokens
+vision_projection_type: none  # aligner or none
+smell_forward_option: cls_token  # cls_token or spatial_tokens
+smell_projection_type: none  # aligner or none
+embed_dim: 384
+smell_model_dim: 768
+smell_num_heads: 8
+smell_num_layers: 4
+vision_freeze_backbone: true  # Freeze CLIP (pretrained)
+vision_freeze_projection: false
+smell_freeze_backbone: false  # Train pretrained backbone
+smell_freeze_projection: false
+
+# ========== Loss ==========
+loss_forward_mode: global  # global | local (must match vision_forward_option)
+spatial_pool: max  # mean | max (only for spatial mode)
+retrieval_mode: ingredientwise  # samplewise | ingredientwise
+temperature: 0.07
+
+# ========== Optimizer ==========
+lr: 5e-5
+min_lr: 1e-8
+weight_decay: 0.05
+lr_scale_vision: 1.0
+lr_scale_smell: 1.0
+lr_scale_aligner: 1.0
+clip_grad: 1.0
+
+# ========== Training ==========
+epochs: 500
+warmup_epochs: 0
+start_epoch: 0
+
+# ========== System ==========
+device: cuda
+seed: 30
+resume: ""
+eval_freq: 5
+save_freq: 5
+
+# ========== WandB ==========
+use_wandb: true
+wandb_project: SeeandSniff
+
+# ========== Training ==========
+# Usage: python main_pretrain.py --config configs/Global-CLIP.yaml --gpu "0"
