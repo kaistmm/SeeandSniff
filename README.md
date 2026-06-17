@@ -83,3 +83,13 @@ Checkpoints, args, and logs are written to `outputs/<experiment_name>/`.
 
 
 ## 5. Citation
+
+If you find this work useful, please cite it as:
+
+```bibtex
+@inproceedings{kim2026seeandsniff,
+  author    = {Seongyu Kim and Seungwoo Lee and Hyeonggon Ryu and Joon Son Chung and Arda Senocak},
+  title     = {See \& Sniff: Learning Visuo-Olfactory Representations},
+  year      = {2026},
+}
+```
