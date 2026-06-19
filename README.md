@@ -91,6 +91,7 @@ If you find this work useful, please cite it as:
 @inproceedings{kim2026seeandsniff,
   author    = {Seongyu Kim and Seungwoo Lee and Hyeonggon Ryu and Joon Son Chung and Arda Senocak},
   title     = {See \& Sniff: Learning Visuo-Olfactory Representations},
+  booktitle = {European Conference on Computer Vision},
   year      = {2026},
 }
 ```
