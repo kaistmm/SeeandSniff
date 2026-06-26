@@ -1,7 +1,7 @@
 # See & Sniff: Learning Visuo-Olfactory Representations
 
 The official Pytorch implementation for "See & Sniff: Learning Visuo-Olfactory Representations", ECCV 2026
-<br> [Seongyu Kim](https://seongyukim.github.io/), [Seungwoo Lee](https://mm.kaist.ac.kr/members/), [Hyeonggon Ryu](https://sites.google.com/view/mmmi-hufs/members/pi?authuser=0), [Joon Son Chung](https://mm.kaist.ac.kr/joon/), [Arda Senocak](https://ardasnck.github.io/)
+<br> [Seongyu Kim](https://seongyukim.github.io/), [Seungwoo Lee](https://sswwoo.github.io/), [Hyeonggon Ryu](https://sites.google.com/view/mmmi-hufs/members/pi?authuser=0), [Joon Son Chung](https://mm.kaist.ac.kr/joon/), [Arda Senocak](https://ardasnck.github.io/)
 
 <p align="center">
   <a href="https://mm.kaist.ac.kr/projects/SeeandSniff/"><img src="https://img.shields.io/badge/See&Sniff-Project_Page-blue" alt="Project Page"></a>&nbsp;
