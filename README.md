@@ -5,6 +5,7 @@ The official Pytorch implementation for "See & Sniff: Learning Visuo-Olfactory R
 
 <p align="center">
   <a href="https://mm.kaist.ac.kr/projects/SeeandSniff/"><img src="https://img.shields.io/badge/See&Sniff-Project_Page-blue" alt="Project Page"></a>&nbsp;
+  <a href="https://arxiv.org/abs/2606.27307"><img src="https://img.shields.io/badge/arXiv-2604.11579-b31b1b.svg" alt="arXiv"></a>&nbsp;
   <a href="https://huggingface.co/sswwoo/SeeandSniff/tree/main"><img src="https://img.shields.io/badge/Dataset-HuggingFace-yellow" alt="Dataset"></a>
 </p>
 
