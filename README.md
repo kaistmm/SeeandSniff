@@ -1,4 +1,4 @@
-# [ECCV 2026 Oral] See & Sniff: Learning Visuo-Olfactory Representations
+# See & Sniff: Learning Visuo-Olfactory Representations
 
 The official Pytorch implementation for "See & Sniff: Learning Visuo-Olfactory Representations", ECCV 2026
 <br> [Seongyu Kim](https://seongyukim.github.io/), [Seungwoo Lee](https://sswwoo.github.io/), [Hyeonggon Ryu](https://sites.google.com/view/mmmi-hufs/members/pi?authuser=0), [Joon Son Chung](https://mm.kaist.ac.kr/joon/), [Arda Senocak](https://ardasnck.github.io/)
