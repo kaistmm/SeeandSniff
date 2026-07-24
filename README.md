@@ -1,7 +1,11 @@
-# See & Sniff: Learning Visuo-Olfactory Representations
+# [ECCV 2026 Oral] See & Sniff: Learning Visuo-Olfactory Representations
 
 The official Pytorch implementation for "See & Sniff: Learning Visuo-Olfactory Representations", ECCV 2026
 <br> [Seongyu Kim](https://seongyukim.github.io/), [Seungwoo Lee](https://sswwoo.github.io/), [Hyeonggon Ryu](https://sites.google.com/view/mmmi-hufs/members/pi?authuser=0), [Joon Son Chung](https://mm.kaist.ac.kr/joon/), [Arda Senocak](https://ardasnck.github.io/)
+
+<p align="center">
+  <img src="https://img.shields.io/badge/ECCV%202026-Oral%20Presentation-b31b1b?style=flat-square&labelColor=2b2b2b&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2ZmZCI+PHBhdGggZD0iTTEyIDJsMi4zOSA0Ljg0IDUuMzQuNzgtMy44NiAzLjc2LjkxIDUuMzJMMTIgMTQuNzdsLTQuNzggMi41MS45MS01LjMyLTMuODYtMy43NiA1LjM0LS43OEwxMiAyeiIvPjwvc3ZnPg==" alt="ECCV 2026 Oral">
+</p>
 
 <p align="center">
   <a href="https://mm.kaist.ac.kr/projects/SeeandSniff/"><img src="https://img.shields.io/badge/See&Sniff-Project_Page-blue" alt="Project Page"></a>&nbsp;
