@@ -102,3 +102,7 @@ If you find this work useful, please cite it as:
   year      = {2026},
 }
 ```
+
+## 6. Acknowledgments
+
+This work builds upon the olfactory dataset from [SmellNet](https://github.com/MIT-MI/SmellNet) (ICLR 2026). We thank the authors for their excellent work.
