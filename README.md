@@ -17,6 +17,12 @@ The official Pytorch implementation for "See & Sniff: Learning Visuo-Olfactory R
 
 ---
 
+<p align="center">
+  <img src="assets/Teaser.jpg" alt="See & Sniff teaser" width="100%">
+</p>
+
+---
+
 ## 1. Environment
 
 ```bash
