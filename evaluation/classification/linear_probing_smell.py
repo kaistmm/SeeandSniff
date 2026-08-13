@@ -686,11 +686,11 @@ def get_args_parser():
     
     # Data preprocessing (should match pretraining settings)
     # Note: These will be overridden by --config YAML values
-    parser.add_argument('--diff_periods', default=50, type=int,
+    parser.add_argument('--diff_periods', default=25, type=int,
                         help='Diff periods for smell data (overridden by --config)')
-    parser.add_argument('--window_size', default=40, type=int,
+    parser.add_argument('--window_size', default=50, type=int,
                         help='Sliding window size (overridden by --config)')
-    parser.add_argument('--stride', default=20, type=int,
+    parser.add_argument('--stride', default=25, type=int,
                         help='Sliding window stride (overridden by --config)')
     parser.add_argument('--max_seq_len', default=1000, type=int,
                         help='Max sequence length when not using windows (overridden by --config)')

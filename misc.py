@@ -38,24 +38,18 @@ def setup_seed(seed):
     cudnn.benchmark = False
 
 
-def save_checkpoint(state, is_best, output_dir, filename='checkpoint.pth'):
+def save_checkpoint(state, output_dir, filename='checkpoint.pth'):
     """
     Save checkpoint to disk.
 
     Args:
         state: Dict containing model/optimizer/scaler states
-        is_best: Whether this is the best checkpoint
         output_dir: Directory to save checkpoint
         filename: Checkpoint filename
     """
     filepath = os.path.join(output_dir, filename)
     torch.save(state, filepath)
     print(f"  ✓ Saved checkpoint to {filename}")
-
-    if is_best:
-        best_filepath = os.path.join(output_dir, 'checkpoint_best.pth')
-        torch.save(state, best_filepath)
-        print(f"  ✓ Saved best checkpoint")
 
 
 def load_checkpoint(model, optimizer, scaler, checkpoint_path, device):
@@ -71,13 +65,14 @@ def load_checkpoint(model, optimizer, scaler, checkpoint_path, device):
 
     Returns:
         start_epoch: Epoch to resume from
-        best_loss: Best loss from checkpoint
     """
     if not os.path.isfile(checkpoint_path):
         raise FileNotFoundError(f"Checkpoint not found: {checkpoint_path}")
 
     print(f"  Loading checkpoint from {checkpoint_path}")
-    checkpoint = torch.load(checkpoint_path, map_location=device)
+    # weights_only=False: the checkpoint stores the training args (argparse.Namespace),
+    # which the torch>=2.6 default (weights_only=True) refuses to unpickle.
+    checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=False)
 
     state_dict = checkpoint['model']
     model.load_state_dict(state_dict)
@@ -86,11 +81,10 @@ def load_checkpoint(model, optimizer, scaler, checkpoint_path, device):
     scaler.load_state_dict(checkpoint['scaler'])
 
     start_epoch = checkpoint['epoch'] + 1
-    best_loss = checkpoint.get('best_loss', float('inf'))
 
-    print(f"  ✓ Loaded checkpoint (epoch {checkpoint['epoch']}, best_loss {best_loss:.4f})")
+    print(f"  ✓ Loaded checkpoint (epoch {checkpoint['epoch']})")
 
-    return start_epoch, best_loss
+    return start_epoch
 
 
 def load_smellnet_checkpoint(smell_encoder, checkpoint_path, device, strict=False):
@@ -110,7 +104,7 @@ def load_smellnet_checkpoint(smell_encoder, checkpoint_path, device, strict=Fals
         raise FileNotFoundError(f"SmellNet checkpoint not found: {checkpoint_path}")
 
     print(f"  Loading SmellNet checkpoint from {checkpoint_path}")
-    checkpoint = torch.load(checkpoint_path, map_location=device)
+    checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=False)
 
     # Extract config info
     model_config = checkpoint.get('model_config', {})

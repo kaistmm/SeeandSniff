@@ -130,7 +130,7 @@ def get_args_parser():
                         choices=['cls_token', 'spatial_tokens'],
                         help='Smell encoder forward option')
     parser.add_argument('--smell_projection_type', default='aligner', type=str,
-                        choices=['aligner', 'none'],
+                        choices=['aligner', 'residual_mlp', 'none'],
                         help='Smell projection type')
     parser.add_argument('--smell_model_dim', default=256, type=int,
                         help='Model dimension for smell transformer')
@@ -210,7 +210,7 @@ def get_args_parser():
     parser.add_argument('--experiment_name', default='experiment', type=str,
                         help='Experiment name for logging')
     parser.add_argument('--gpu', default='0', type=str,
-                        help='GPU ID to use (e.g., "0")')
+                        help='GPU index to use (single GPU, e.g. "0")')
 
     return parser
 
@@ -225,10 +225,16 @@ def main(args):
     # ========================================
     # GPU Selection
     # ========================================
-    os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
-    console.print(f"[cyan]ℹ CUDA_VISIBLE_DEVICES set to: {args.gpu}[/cyan]")
-
-    device = torch.device(args.device if torch.cuda.is_available() else "cpu")
+    # Select the device explicitly rather than via CUDA_VISIBLE_DEVICES: that env
+    # var is only read when the CUDA context is first created, so setting it here
+    # (torch is already imported at module level) is order-dependent and would
+    # fail silently if anything touched CUDA earlier.
+    if args.device == 'cpu' or not torch.cuda.is_available():
+        device = torch.device('cpu')
+    else:
+        device = torch.device(f'cuda:{args.gpu}')
+        torch.cuda.set_device(device)
+    console.print(f"[cyan]ℹ Using device: {device}[/cyan]")
 
     console.print(Panel.fit(
         f"[bold cyan]Visual-Odor Cross-Modal Pretraining[/bold cyan]\nSingle GPU training",
@@ -724,11 +730,10 @@ def main(args):
     # Resume/Load Checkpoint
     # ========================================
     start_epoch = args.start_epoch
-    best_loss = float('inf')
 
     if args.resume:
         console.print("\n[bold green]│[/bold green] [6/8] Loading checkpoint...")
-        start_epoch, best_loss = load_checkpoint(
+        start_epoch = load_checkpoint(
             model, optimizer, scaler, args.resume, device
         )
     else:
@@ -793,15 +798,10 @@ def main(args):
                 log_writer=None,
             )
 
-            console.print(f"  [green]✓[/green] Test loss: [cyan]{val_stats['loss']:.4f}[/cyan]")
-            if 'retrieval_acc' in val_stats:
-                console.print(f"  [green]✓[/green] Retrieval R@1: [cyan]{val_stats['retrieval_acc']:.4f}[/cyan]")
-
             # WandB logging
             if args.use_wandb and WANDB_AVAILABLE:
                 log_dict = {
                     'epoch': epoch,
-                    'val/loss': val_stats['loss'],
                 }
                 for k, v in val_stats.items():
                     if k not in ['loss', 'affinity_matrix']:
@@ -809,33 +809,20 @@ def main(args):
                 wandb.log(log_dict)
 
         # Save checkpoint
-        # Check if best
-        is_best = False
-        if val_stats is not None and val_stats['loss'] < best_loss:
-            best_loss = val_stats['loss']
-            is_best = True
-
-        # Save regular checkpoint
-        if epoch % args.save_freq == 0 or epoch == args.epochs - 1 or is_best:
+        if epoch % args.save_freq == 0 or epoch == args.epochs - 1:
             checkpoint = {
                 'epoch': epoch,
                 'model': model.state_dict(),
                 'optimizer': optimizer.state_dict(),
                 'scaler': scaler.state_dict(),
                 'args': args,
-                'best_loss': best_loss,
                 'train_stats': train_stats,
                 'val_stats': val_stats
             }
 
-            if is_best:
-                save_checkpoint(checkpoint, is_best=True, output_dir=args.output_dir)
-                console.print(f"  [green]✓[/green] Saved best checkpoint (loss: {best_loss:.4f})")
-
-            if epoch % args.save_freq == 0 or epoch == args.epochs - 1:
-                filename = f'checkpoint_epoch_{epoch}.pth'
-                save_checkpoint(checkpoint, is_best=False, output_dir=args.output_dir, filename=filename)
-                console.print(f"  [green]✓[/green] Saved checkpoint: {filename}")
+            filename = f'checkpoint_epoch_{epoch}.pth'
+            save_checkpoint(checkpoint, output_dir=args.output_dir, filename=filename)
+            console.print(f"  [green]✓[/green] Saved checkpoint: {filename}")
 
         print()  # Empty line between epochs
 
@@ -844,7 +831,7 @@ def main(args):
     # ========================================
     console.print("\n[bold green]│[/bold green] [8/8] Final evaluation on test set...")
 
-    final_stats = evaluate(
+    evaluate(
         model=model,
         loss_fn=loss_fn,
         vision_test=vision_test,
@@ -861,8 +848,6 @@ def main(args):
     summary_table.add_column(style="dim")
     summary_table.add_column()
     summary_table.add_row("Total time", f"[cyan]{datetime.timedelta(seconds=int(total_time))}[/cyan]")
-    summary_table.add_row("Best validation loss", f"[cyan]{best_loss:.4f}[/cyan]")
-    summary_table.add_row("Final validation loss", f"[cyan]{final_stats['loss']:.4f}[/cyan]")
     summary_table.add_row("Checkpoints saved to", f"[cyan]{args.output_dir}[/cyan]")
     summary_table.add_row("Logs saved to", f"[cyan]{args.log_dir}[/cyan]")
 

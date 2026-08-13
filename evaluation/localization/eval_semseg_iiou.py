@@ -74,26 +74,25 @@ def override_args_with_yaml(args, yaml_path):
     return args
 
 
-ROOT = os.path.abspath(".")  # SeeandSniff/
 args = SimpleNamespace(
     # ========= Experiment =========
     experiment_name="SeeandSniff",
-    output_dir=os.path.join(ROOT, "outputs/SeeandSniff"),
-    log_dir=os.path.join(ROOT, "outputs/logs/SeeandSniff"),
+    output_dir="outputs/SeeandSniff",
+    log_dir="outputs/logs/SeeandSniff",
 
     # ========= Data Paths =========
-    vision_train_json=os.path.join(ROOT, "metadata/train_metadata.json"),
-    vision_test_json=os.path.join(ROOT, "metadata/test_metadata.json"),
-    vision_train_dir=os.path.join(ROOT, "datasets/train"),
-    vision_test_dir=os.path.join(ROOT, "datasets/test"),
-    smell_train_dir=os.path.join(ROOT, "datasets/SmellNet/base_data/training"),
-    smell_test_dir=os.path.join(ROOT, "datasets/SmellNet/base_data/testing"),
-    label_json=os.path.join(ROOT, "metadata/ingredient_labels.json"),
+    vision_train_json="metadata/train_metadata.json",
+    vision_test_json="metadata/test_metadata.json",
+    vision_train_dir="datasets/train",
+    vision_test_dir="datasets/test",
+    smell_train_dir="datasets/SmellNet/base_data/training",
+    smell_test_dir="datasets/SmellNet/base_data/testing",
+    label_json="metadata/ingredient_labels.json",
 
     # ========= Smell Preprocessing =========
-    diff_periods=50,
-    window_size=40,
-    stride=20,
+    diff_periods=25,
+    window_size=50,
+    stride=25,
     removed_columns=[
         "Benzene", "Temperature", "Pressure",
         "Humidity", "Gas_Resistance", "Altitude"
@@ -102,14 +101,14 @@ args = SimpleNamespace(
 
     # ========= Vision Encoder =========
     vision_encoder="dinov3_vits16",
-    vision_forward_option="cls_token",
+    vision_forward_option="spatial_tokens",
     vision_projection_type="aligner",
     vision_freeze_backbone=True,
     vision_freeze_projection=False,
 
     # ========= Smell Encoder =========
-    smell_forward_option="cls_token",
-    smell_projection_type="aligner",
+    smell_forward_option="spatial_tokens",
+    smell_projection_type="residual_mlp",
     smell_model_dim=384,
     smell_num_heads=8,
     smell_num_layers=4,
@@ -117,7 +116,7 @@ args = SimpleNamespace(
     smell_freeze_projection=False,
 
     # ========= Common =========
-    embed_dim=512,
+    embed_dim=384,
 
     # ========= Loss =========
     temperature=0.07,
@@ -129,7 +128,6 @@ args = SimpleNamespace(
 
 ### Load training hyperparameters from YAML config
 args = override_args_with_yaml(args, _cli.config)
-print(args.window_size, args.stride)
 
 # Label encoder
 le = create_label_encoder_from_json(args.label_json)
@@ -238,8 +236,7 @@ with torch.serialization.safe_globals([argparse.Namespace]):
 state_dict = ckpt_obj["model"]
 if any(k.startswith("module.") for k in state_dict.keys()):
     state_dict = {k.replace("module.", "", 1): v for k, v in state_dict.items()}
-ret = model.load_state_dict(state_dict, strict=True)
-print("LOAD STATE DICT RETURN:", ret)
+model.load_state_dict(state_dict, strict=True)
 model.eval()
 
 
@@ -338,8 +335,8 @@ print(f"Results will be logged to: {_result_log_path}")
 #   datasets/test_iiou/...            (images, 224×224)
 #   datasets/mask_iiou_first/...      (mask for ingredient1)
 #   datasets/mask_iiou_second/...     (mask for ingredient2)
-_datasets_root      = os.path.dirname(args.vision_test_dir)        # = "<ROOT>/datasets"
-_iiou_metadata_path = os.path.join(ROOT, "metadata", "test_iiou_metadata.json")
+_datasets_root      = os.path.dirname(args.vision_test_dir)        # = "datasets"
+_iiou_metadata_path = "metadata/test_iiou_metadata.json"
 with open(_iiou_metadata_path, "r") as _f:
     _iiou_entries = json.load(_f)
 # Defensive: drop entries with missing ingredient2 (shouldn't happen)
