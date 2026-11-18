@@ -77,7 +77,17 @@ TO_TENSOR = transforms.Compose([
     transforms.ToTensor()
 ])
 
+# Deterministic part, applied once at load time (output: uint8 tensor)
+RGB_LOAD = transforms.Compose([
+    transforms.Resize((448,448)),
+    transforms.PILToTensor(),
+])
+
+# Random part, applied per sample in VisualOdorDataset.__getitem__ (input: RGB_LOAD output)
 RGB_AUGMENTS = transforms.Compose([
+    # 0. uint8 -> float in [0, 1] (before any resampling, to avoid rounding)
+    transforms.ConvertImageDtype(torch.float32),
+    
     # 1. Geometric (Sizing)
     transforms.RandomResizedCrop(
         (224, 224), 
@@ -101,7 +111,6 @@ RGB_AUGMENTS = transforms.Compose([
     transforms.RandomApply([transforms.GaussianBlur(9, sigma=(0.1, 0.5))], p=0.1),
     
     # 4. Normalize
-    transforms.ToTensor(),
     transforms.Normalize(mean=RGB_MEAN, std=RGB_STD),
 ])
 
@@ -235,7 +244,7 @@ def load_vision_data(
                 img_path = os.path.join(base_image_dir, rel_path)
                 
                 try:
-                    rgb = Image.open(img_path)
+                    rgb = Image.open(img_path).convert("RGB")
                     if transform_rgb is not None:
                         rgb = transform_rgb(rgb)
                     if device is not None:

@@ -48,6 +48,7 @@ from load_data import (
     load_sensor_data,
     create_label_encoder_from_json,
     RGB_PREPROCESS,
+    RGB_LOAD,
     RGB_AUGMENTS,
     diff_data_like,
     make_sliding_window_dataset,
@@ -312,7 +313,7 @@ def main(args):
     vision_train = load_vision_data(
         json_path=args.vision_train_json,
         base_image_dir=args.vision_train_dir,
-        transform_rgb=RGB_AUGMENTS,
+        transform_rgb=RGB_LOAD,
     )
     vision_test = load_vision_data(
         json_path=args.vision_test_json,
@@ -399,6 +400,7 @@ def main(args):
         smell_data=smell_train,
         le=le,
         pairing_mode=args.pairing_mode,
+        vision_transform=RGB_AUGMENTS,
         seed=args.seed,
     )
 

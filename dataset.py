@@ -28,12 +28,14 @@ class VisualOdorDataset(Dataset):
         smell_data: dict,
         le,
         pairing_mode: str = 'cycled_shuffle',
+        vision_transform=None,
         seed: int = 42,
     ):
         self.vision_data = vision_data
         self.smell_data = smell_data
         self.le = le
         self.pairing_mode = pairing_mode
+        self.vision_transform = vision_transform
         self.seed = seed
         
         np.random.seed(seed)
@@ -145,6 +147,8 @@ class VisualOdorDataset(Dataset):
         
         vision_tensor = self.vision_data[ingredient][v_idx].clone()
         smell_tensor = self.smell_data[ingredient][s_idx].clone()
+        if self.vision_transform is not None:
+            vision_tensor = self.vision_transform(vision_tensor)
         
         return vision_tensor, smell_tensor, label_idx
     
